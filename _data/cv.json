@@ -1,5 +1,8 @@
 {
-
+"basics": {
+"name": "Sterre Lutz",
+"summary": "PhD candidate in Formal Methods for Machine Learning at Delft University of Technology. Research focuses on verification of learning-enabled control systems, probabilistic certificates, compositional synthesis, and safe AI.",
+},
 "profiles": [
 {
 "network": "Google Scholar",
@@ -28,15 +31,15 @@
 {
 "name": "Delft University of Technology",
 "position": "PhD Researcher",
-"startDate": "2023-10",
+"startDate": "2023",
 "endDate": "",
 "summary": "Research on reclaiming and strengthening formal safety guarantees for learning-driven control systems under system changes, with a focus on certificate-based verification."
 },
 {
 "name": "TNO (Netherlands Organisation for Applied Scientific Research)",
 "position": "Research Intern",
-"startDate": "2022-09",
-"endDate": "2022-12",
+"startDate": "September 2022",
+"endDate": "December 2022",
 "summary": "Research on formal representations of laws and regulations using deontic and dynamic logic."
 }
 ],
@@ -73,21 +76,21 @@
 "name": "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change",
 "publisher": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence (IJCAI 2025)",
 "releaseDate": "2025",
-"website": "",
-"summary": ""
-},
-{
-"name": "Spotivibes: Tagging Playlist Vibes with Colors",
-"publisher": "Proceedings of IntRS@RecSys",
-"releaseDate": "2019",
-"website": "",
+"website": "https://www.ijcai.org/proceedings/2025/52",
 "summary": ""
 },
 {
 "name": "Deontic Paradoxes in Library Lending Regulations: A Case Study in Flint",
 "publisher": "ProLaLa 2023 (POPL Workshop)",
 "releaseDate": "2023",
-"website": "",
+"website": "https://arxiv.org/abs/2212.05893",
+"summary": ""
+},
+  {
+"name": "Spotivibes: Tagging Playlist Vibes with Colors",
+"publisher": "Proceedings of IntRS@RecSys",
+"releaseDate": "2019",
+"website": "https://web.archive.org/web/20220419181646id_/http://ceur-ws.org/Vol-2450/short1.pdf",
 "summary": ""
 }
 ],
@@ -96,19 +99,19 @@
 {
 "name": "Neural Certificates as Verification with Reusable Reasoning",
 "event": "Dagstuhl Seminar: User-Aligned Assessment of AI Systems",
-"date": "2026",
+"date": "January 2026",
 "location": "Schloss Dagstuhl, Germany"
 },
 {
 "name": "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change",
 "event": "IJCAI 2025",
-"date": "2025",
+"date": "September 2025",
 "location": "Montréal, Canada"
 },
 {
 "name": "Deontic Paradoxes in Library Lending Regulations",
 "event": "ProLaLa 2023 (POPL Workshop)",
-"date": "2023",
+"date": "January 2023",
 "location": "Boston, USA"
 }
 ],
