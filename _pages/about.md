@@ -15,11 +15,12 @@ You can find my publications and academic profiles through the links in the side
 
 ## Research interests
 
-- Verification of learning-based control
-- Safety-critical autonomous systems
-- Neural network controllers
-- Certificate-based methods
+- Verification of sequential decision making
+- Certificate-based verification
 - Stochastic and uncertain dynamical systems
+- Safety-critical autonomous systems
+- Logic for safe AI
+- Neural network controllers
 - Compositional verification and control
 
 ## Contact
