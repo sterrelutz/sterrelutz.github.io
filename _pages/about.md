@@ -24,4 +24,4 @@ You can find my publications and academic profiles through the links in the side
 
 ## Contact
 
-You can reach me via LinkedIn for now, and I will add an email address here soon.
+You can reach me via LinkedIn, or my university email address.
