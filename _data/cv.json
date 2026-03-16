@@ -1,17 +1,5 @@
 {
-"basics": {
-"name": "Sterre Lutz",
-"email": "",
-"phone": "",
-"website": "https://sterrelutz.github.io",
-"summary": "PhD candidate in Formal Methods for Machine Learning at Delft University of Technology. Research focuses on verification of learning-enabled control systems, probabilistic certificates, compositional synthesis, and safe AI.",
-"location": {
-"address": "",
-"postalCode": "",
-"city": "Delft",
-"countryCode": "NL",
-"region": "South Holland"
-},
+
 "profiles": [
 {
 "network": "Google Scholar",
