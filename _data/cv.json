@@ -1,152 +1,140 @@
 {
-  "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
-    "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
-    },
-    "profiles": [
-      {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
-      },
-      {
-        "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
-      }
-    ]
-  },
-  "work": [],
-  "education": [
-    {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
-      "courses": []
-    },
-    {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
-      "courses": []
-    }
-  ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+"basics": {
+"name": "Sterre Lutz",
+"email": "",
+"phone": "",
+"website": "https://sterrelutz.github.io",
+"summary": "PhD candidate in Formal Methods for Machine Learning at Delft University of Technology. Research focuses on verification of learning-enabled control systems, probabilistic certificates, compositional synthesis, and safe AI.",
+"location": {
+"address": "",
+"postalCode": "",
+"city": "Delft",
+"countryCode": "NL",
+"region": "South Holland"
+},
+"profiles": [
+{
+"network": "Google Scholar",
+"username": "UvVff8MAAAAJ",
+"url": "https://scholar.google.nl/citations?user=UvVff8MAAAAJ"
+},
+{
+"network": "ORCID",
+"username": "0000-0002-6827-7722",
+"url": "https://orcid.org/0000-0002-6827-7722"
+},
+{
+"network": "GitHub",
+"username": "sterrelutz",
+"url": "https://github.com/sterrelutz"
+},
+{
+"network": "LinkedIn",
+"username": "sterre-lutz-062581152",
+"url": "https://www.linkedin.com/in/sterre-lutz-062581152/"
+}
+]
+},
+
+"work": [
+{
+"name": "Delft University of Technology",
+"position": "PhD Researcher",
+"startDate": "2023-10",
+"endDate": "",
+"summary": "Research on reclaiming and strengthening formal safety guarantees for learning-driven control systems under system changes, with a focus on certificate-based verification."
+},
+{
+"name": "TNO (Netherlands Organisation for Applied Scientific Research)",
+"position": "Research Intern",
+"startDate": "2022-09",
+"endDate": "2022-12",
+"summary": "Research on formal representations of laws and regulations using deontic and dynamic logic."
+}
+],
+
+"education": [
+{
+"institution": "Delft University of Technology",
+"area": "PhD in Formal Methods for Machine Learning",
+"studyType": "PhD",
+"startDate": "2023",
+"endDate": "",
+"courses": []
+},
+{
+"institution": "Utrecht University",
+"area": "MSc Artificial Intelligence (Cum Laude)",
+"studyType": "Master's",
+"startDate": "",
+"endDate": "2023",
+"courses": []
+},
+{
+"institution": "Delft University of Technology",
+"area": "BSc Computer Science and Engineering (Cum Laude)",
+"studyType": "Bachelor's",
+"startDate": "",
+"endDate": "2020",
+"courses": []
+}
+],
+
+"publications": [
+{
+"name": "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change",
+"publisher": "Proceedings of the Thirty-Fourth International Joint Conference on Artificial Intelligence (IJCAI 2025)",
+"releaseDate": "2025",
+"website": "",
+"summary": ""
+},
+{
+"name": "Spotivibes: Tagging Playlist Vibes with Colors",
+"publisher": "Proceedings of IntRS@RecSys",
+"releaseDate": "2019",
+"website": "",
+"summary": ""
+},
+{
+"name": "Deontic Paradoxes in Library Lending Regulations: A Case Study in Flint",
+"publisher": "ProLaLa 2023 (POPL Workshop)",
+"releaseDate": "2023",
+"website": "",
+"summary": ""
+}
+],
+
+"presentations": [
+{
+"name": "Neural Certificates as Verification with Reusable Reasoning",
+"event": "Dagstuhl Seminar: User-Aligned Assessment of AI Systems",
+"date": "2026",
+"location": "Schloss Dagstuhl, Germany"
+},
+{
+"name": "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change",
+"event": "IJCAI 2025",
+"date": "2025",
+"location": "Montréal, Canada"
+},
+{
+"name": "Deontic Paradoxes in Library Lending Regulations",
+"event": "ProLaLa 2023 (POPL Workshop)",
+"date": "2023",
+"location": "Boston, USA"
+}
+],
+
+"awards": [
+{
+"title": "VvL Master’s Thesis Award",
+"date": "2024",
+"awarder": "Dutch Association for Logic and Philosophy of Exact Sciences"
+},
+{
+"title": "ASML Technology Scholarship",
+"date": "2021–2023",
+"awarder": "ASML"
+}
+]
 }
