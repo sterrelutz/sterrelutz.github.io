@@ -9,6 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
+## Research Interests
+Formal verification of learning-enabled control systems; probabilistic certificates; compositional synthesis; temporal logic for stochastic systems; safe and reliable AI.
+
+---
+
 ## Education
 * **Ph.D. in Formal Methods for Machine Learning**, Delft University of Technology, 2023--Present  
   *Advisors: Dr. Anna Lukina and Prof. Matthijs T. J. Spaan*
@@ -17,11 +22,6 @@ redirect_from:
   *Thesis: r-PLBP: Temporal Logic for Reasoning about Safety and Rewards of Bounded Policies under Uncertainty*
 
 * **B.Sc. in Computer Science and Engineering (Cum Laude)**, Delft University of Technology, 2020  
-
----
-
-## Research Interests
-Formal verification of learning-enabled control systems; probabilistic certificates; compositional synthesis; temporal logic for stochastic systems; safe and reliable AI.
 
 ---
 
@@ -59,10 +59,3 @@ Formal verification of learning-enabled control systems; probabilistic certifica
 
 * **ASML Technology Scholarship**, 2021--2023  
   Nationally competitive merit-based scholarship
-
----
-
-## Teaching
-<ul>{% for post in site.teaching reversed %}
-  {% include archive-single-cv.html %}
-{% endfor %}</ul>
