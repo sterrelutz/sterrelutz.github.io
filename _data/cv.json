@@ -26,23 +26,6 @@
 ]
 },
 
-"work": [
-{
-"name": "Delft University of Technology",
-"position": "PhD Researcher",
-"startDate": "2023",
-"endDate": "current",
-"summary": "Research on reclaiming and strengthening formal safety guarantees for learning-driven control systems under system changes, with a focus on certificate-based verification."
-},
-{
-"name": "TNO (Netherlands Organisation for Applied Scientific Research)",
-"position": "Research Intern",
-"startDate": "September 2022",
-"endDate": "December 2022",
-"summary": "Research on formal representations of laws and regulations using deontic and dynamic logic."
-}
-],
-
 "education": [
 {
 "institution": "Delft University of Technology",
@@ -94,25 +77,39 @@
 }
 ],
 
-"presentations": [
-{
-"name": "Neural Certificates as Verification with Reusable Reasoning",
-"event": "Dagstuhl Seminar: User-Aligned Assessment of AI Systems",
-"date": "2026",
-"location": "Schloss Dagstuhl, Germany"
-},
-{
-"name": "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change",
-"event": "IJCAI 2025",
-"date": "2025",
-"location": "Montréal, Canada"
-},
-{
-"name": "Deontic Paradoxes in Library Lending Regulations",
-"event": "ProLaLa 2023 (POPL Workshop)",
-"date": "2023",
-"location": "Boston, USA"
-}
+"academicActivities": [
+  {
+    "name": "Neural Certificates as Verification with Reusable Reasoning",
+    "event": "Dagstuhl Seminar: User-Aligned Assessment of AI Systems",
+    "date": "2026",
+    "location": "Schloss Dagstuhl, Germany"
+  },
+  {
+    "name": "Simons Institute Extended Reunion: Theoretical Foundations of Computer Systems",
+    "date": "2024",
+    "location": "Berkeley, CA, USA",
+    "summary": "Research visit; participation in two workshops",
+    "website": "https://simons.berkeley.edu/programs/extended-reunion-theoretical-foundations-computer-systems"
+  },
+  {
+    "name": "Research Intern",
+    "event": "TNO (Netherlands Organisation for Applied Scientific Research)",
+    "date": "Sept 2022 -- Dec 2022",
+    "location": "The Netherlands",
+    "summary": "Research on formal representations of laws and regulations using deontic and dynamic logic"
+  },
+  {
+    "name": "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change",
+    "event": "IJCAI 2025",
+    "date": "2025",
+    "location": "Montréal, Canada"
+  },
+  {
+    "name": "Deontic Paradoxes in Library Lending Regulations",
+    "event": "ProLaLa 2023 (POPL Workshop)",
+    "date": "2023",
+    "location": "Boston, USA"
+  }
 ],
 
 "awards": [
