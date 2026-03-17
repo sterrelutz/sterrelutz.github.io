@@ -23,7 +23,7 @@ author:
   avatar           : "profile.png"
   name             : "Sterre Lutz"
   pronouns         : "she/her"
-  bio              : "PhD researcher at Delft University of Technology working on verification of learning-driven control in safety-critical systems, with a focus on neural network-based controllers in dynamic and stochastic environments."
+  bio              : "PhD candidate in Formal Methods for Learned Systems"
   location         : "Delft, The Netherlands"
   employer         : "Delft University of Technology"
   uri              : "https://sterrelutz.github.io"
