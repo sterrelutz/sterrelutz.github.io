@@ -9,56 +9,60 @@ redirect_from:
 
 {% include base_path %}
 
-Education
-======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+## Education
+* **Ph.D. in Formal Methods for Machine Learning**, Delft University of Technology, 2023--Present  
+  *Advisors: Dr. Anna Lukina and Prof. Matthijs T. J. Spaan*
 
-Work experience
-======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **M.Sc. in Artificial Intelligence (Cum Laude)**, Utrecht University, 2023  
+  *Thesis: r-PLBP: Temporal Logic for Reasoning about Safety and Rewards of Bounded Policies under Uncertainty*
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **B.Sc. in Computer Science and Engineering (Cum Laude)**, Delft University of Technology, 2020  
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+---
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+## Research Interests
+Formal verification of learning-enabled control systems; probabilistic certificates; compositional synthesis; temporal logic for stochastic systems; safe and reliable AI.
+
+---
+
+## Publications
+<ul>{% for post in site.publications reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
+
+---
+
+## Academic Activities
+* **Dagstuhl Seminar: User-Aligned Assessment of AI Systems**, Schloss Dagstuhl, Germany, 2026  
+  *Invited talk: "Neural Certificates as Verification with Reusable Reasoning"*
+
+* **Simons Institute Extended Reunion: Theoretical Foundations of Computer Systems**, Berkeley, CA, USA, 2024  
+  *Research visit; participation in two workshops*
+
+* **IJCAI 2025**, Montréal, Canada, 2025  
+  *Conference paper presentation*
+
+* **ProLaLa 2023 (POPL Workshop)**, Boston, USA, 2023  
+  *Workshop paper presentation*
+
+* **POPL 2023**, Boston, USA, 2023  
+  *Attendance*
+
+* **Research Internship**, TNO (Netherlands Organisation for Applied Scientific Research), 2022  
+  *Research on formal representations of laws and regulations using deontic and dynamic logic*
+
+---
+
+## Awards
+* **VvL Master’s Thesis Award**, 2024  
+  Dutch Association for Logic and Philosophy of Exact Sciences
+
+* **ASML Technology Scholarship**, 2021--2023  
+  Nationally competitive merit-based scholarship
+
+---
+
+## Teaching
+<ul>{% for post in site.teaching reversed %}
+  {% include archive-single-cv.html %}
+{% endfor %}</ul>
