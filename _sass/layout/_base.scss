@@ -184,16 +184,8 @@ li ol {
   margin-top: 0.5em;
 }
 
-ul.star-list {
-  list-style: none;
-  padding-left: 1.3em;
-
-  > li::before {
-    content: "✦";
-    margin-left: -1.3em;
-    margin-right: 0.55em;
-    font-size: 0.8em;
-  }
+ul.star-list > li {
+  list-style-type: "✦  " !important;
 }
 
 /*
