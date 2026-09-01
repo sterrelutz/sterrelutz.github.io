@@ -19,6 +19,7 @@ You can find my publications and academic profiles through the links in the side
 
 ## Research interests
 
+<div class="star-list">
 * Verification of sequential decision making
 * Certificate-based verification
 * Stochastic and uncertain dynamical systems
@@ -26,6 +27,7 @@ You can find my publications and academic profiles through the links in the side
 * Logic for safe AI
 * Neural network controllers
 * Compositional verification and control
+</div>
 
 ## Contact
 
