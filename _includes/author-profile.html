@@ -3,6 +3,7 @@
 {% if page.author and site.data.authors[page.author] %}
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
+{% assign name_audio = author.name_audio | default: "/assets/audio/name-pronunciation.mp3" %}
 
 <div itemscope itemtype="http://schema.org/Person">
 
@@ -15,23 +16,37 @@
   </div>
 
   <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
+    <h3 class="author__name">
+      {{ author.name }}
+      <button class="name-action name-pronunciation" type="button" aria-label="Hear how to pronounce {{ author.name }}" title="Hear pronunciation" onclick="document.getElementById('name-pronunciation-audio').play()">
+        <i class="fas fa-microphone-lines" aria-hidden="true"></i>
+      </button>
+      <audio id="name-pronunciation-audio" preload="none" src="{{ name_audio | prepend: base_path }}"></audio>
+      <span class="name-note">
+        <button class="name-action name-note__button" type="button" aria-label="Show the meaning of the name Sterre" aria-controls="name-note-panel" aria-expanded="false" title="Show meaning" onclick="showNameMeaning()">
+          <i class="fas fa-question" aria-hidden="true"></i>
+        </button>
+        <span id="name-note-panel" class="name-note__panel" role="status" hidden>
+          <button class="name-note__close" type="button" aria-label="Close name meaning" title="Close" onclick="hideNameMeaning()">&times;</button>
+          <i>Ster</i> means <i>star</i> in Dutch.
+        </span>
+      </span>
+      <button class="name-action author-links-toggle" type="button" aria-label="Show contact and profile links" aria-controls="author-links" aria-expanded="false" title="Show contact links" onclick="toggleAuthorLinks(this)">
+        <i class="fas fa-envelope" aria-hidden="true"></i>
+      </button>
+    </h3>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+    <ul id="author-links" class="author__urls social-icons">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fas fa-fw fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
-      {% endif %}
-      {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
+        <li class="author__desktop"><a href="{{ author.employer_url | default: 'https://www.tudelft.nl/' }}"><i class="fas fa-fw fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</a></li>
       {% endif %}
       {% if author.email %}
         <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope icon-pad-right" aria-hidden="true"></i>{{ site.data.ui-text[site.locale].email_label | default: "Email" }}</a></li>
@@ -46,6 +61,9 @@
       {% endif %}      
       {% if author.googlescholar %}
         <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar ai-fw icon-pad-right"></i>Google Scholar</a></li>
+      {% endif %}
+      {% if author.linkedin %}
+        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
       {% endif %}
       {% if author.inspire-hep %}
         <li><a href="{{ author.inspire-hep }}"><i class="ai ai-inspire ai-fw icon-pad-right"></i>INSPIRE-HEP</a></li>
@@ -125,9 +143,6 @@
       {% endif %}      
       {% if author.lastfm %}
         <li><a href="https://last.fm/user/{{ author.lastfm }}"><i class="fab fa-fw fa-lastfm icon-pad-right" aria-hidden="true"></i>Last.fm</a></li>
-      {% endif %}      
-      {% if author.linkedin %}
-        <li><a href="https://www.linkedin.com/in/{{ author.linkedin }}"><i class="fab fa-fw fa-linkedin icon-pad-right" aria-hidden="true"></i>LinkedIn</a></li>
       {% endif %}      
       {% if author.mastodon %}
         <li><a href="{{ author.mastodon }}"><i class="fab fa-fw fa-mastodon icon-pad-right" aria-hidden="true"></i>Mastodon</a></li>

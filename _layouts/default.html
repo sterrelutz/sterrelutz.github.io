@@ -11,10 +11,13 @@ layout: compress
     {% include head/custom.html %}
   </head>
 
-  <body>
+  <body class="no-masthead">
 
     {% include browser-upgrade.html %}
-    {% include masthead.html %}
+    <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
+      <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+    <span id="shooting-star" class="shooting-star" aria-hidden="true">&#10022;</span>
 
     {{ content }}
 

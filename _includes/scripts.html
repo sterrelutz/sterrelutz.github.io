@@ -1,3 +1,88 @@
 <script type="module" src="{{ base_path }}/assets/js/main.min.js"></script>
 
+<script>
+  function syncThemeToggleAction() {
+    var toggle = document.getElementById('theme-toggle');
+    var icon = document.getElementById('theme-icon');
+    if (!toggle || !icon) return;
+
+    var isDark = document.documentElement.hasAttribute('data-theme');
+    icon.classList.toggle('fa-sun', isDark);
+    icon.classList.toggle('fa-moon', !isDark);
+    var label = isDark ? 'Switch to light mode' : 'Switch to dark mode';
+    toggle.setAttribute('aria-label', label);
+    toggle.setAttribute('title', label);
+  }
+
+  new MutationObserver(syncThemeToggleAction).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ['data-theme']
+  });
+  syncThemeToggleAction();
+
+  function toggleAuthorLinks(button) {
+    var links = document.getElementById('author-links');
+    var linksHome = document.querySelector('.author__urls-wrapper');
+    var isOpen = button.getAttribute('aria-expanded') === 'true';
+
+    if (isOpen) {
+      links.classList.remove('author-links--open');
+      links.removeAttribute('style');
+      linksHome.appendChild(links);
+    } else {
+      var buttonRect = button.getBoundingClientRect();
+      document.body.appendChild(links);
+      links.classList.add('author-links--open');
+      links.style.position = 'fixed';
+      links.style.top = (buttonRect.bottom + 8) + 'px';
+      links.style.right = 'auto';
+      var left = buttonRect.right - links.offsetWidth;
+      left = Math.max(8, Math.min(left, window.innerWidth - links.offsetWidth - 8));
+      links.style.left = left + 'px';
+    }
+
+    button.setAttribute('aria-expanded', String(!isOpen));
+    button.setAttribute('title', isOpen ? 'Show contact links' : 'Hide contact links');
+  }
+
+  function showNameMeaning() {
+    var panel = document.getElementById('name-note-panel');
+    var button = document.querySelector('.name-note__button');
+    var star = document.getElementById('shooting-star');
+
+    document.body.appendChild(panel);
+    panel.hidden = false;
+    button.setAttribute('aria-expanded', 'true');
+
+    var buttonRect = button.getBoundingClientRect();
+    var gap = 8;
+    var left = buttonRect.right - panel.offsetWidth;
+    left = Math.max(gap, Math.min(left, window.innerWidth - panel.offsetWidth - gap));
+
+    var top = buttonRect.top - panel.offsetHeight - gap;
+    if (top < gap) {
+      top = buttonRect.bottom + gap;
+    }
+
+    panel.style.left = left + 'px';
+    panel.style.top = top + 'px';
+
+    var starStartX = buttonRect.right + (buttonRect.width / 2) - (star.offsetWidth / 2);
+    var starStartY = buttonRect.top + (buttonRect.height / 2) - (star.offsetHeight / 2);
+    star.style.setProperty('--shooting-star-x', starStartX + 'px');
+    star.style.setProperty('--shooting-star-y', starStartY + 'px');
+
+    star.classList.remove('shooting-star--active');
+    void star.offsetWidth;
+    star.classList.add('shooting-star--active');
+  }
+
+  function hideNameMeaning() {
+    document.getElementById('name-note-panel').hidden = true;
+    var button = document.querySelector('.name-note__button');
+    button.setAttribute('aria-expanded', 'false');
+    button.focus();
+  }
+</script>
+
 {% include analytics.html %}

@@ -1,25 +1,20 @@
-{% include base_path %}
+<p class="footer__invitation">You have reached the end of my (documented) achievements. Reach out for a chat!</p>
 
-{% if site.author.github or site.author.bitbucket or site.atom_feed.hide != true %}
-<div class="page__footer-follow">
-  <ul class="social-icons">
-    {% if site.data.ui-text[site.locale].follow_label %}
-      <li><strong>{{ site.data.ui-text[site.locale].follow_label }}</strong></li>
-    {% endif %}
-    {% if site.author.github %}
-      <li><a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a></li>
-    {% endif %}
-    {% if site.author.bitbucket %}
-      <li><a href="https://bitbucket.org/{{ site.author.bitbucket }}"><i class="fab fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
-    {% endif %}
-    {% if site.atom_feed.hide != true %}
-    <li><a href="{% if site.atom_feed.path %}{{ site.atom_feed.path }}{% else %}{{ base_path }}/feed.xml{% endif %}"><i class="fa fa-fw fa-rss-square" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].feed_label | default: "Feed" }}</a></li>
-    {% endif %}
-  </ul>
+<div class="footer__identity">
+  <span class="footer__star" aria-hidden="true">&#10022;</span>
+  <span>{{ site.name | default: site.title }}</span>
 </div>
-{% endif %}
 
-<div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
-  Site last updated {{ "now" | date: '%Y-%m-%d' }}
+<nav class="footer__links" aria-label="Profile links">
+  <a href="{{ site.author.employer_url | default: 'https://www.tudelft.nl/' }}"><i class="fas fa-building-columns" aria-hidden="true"></i><span>TU Delft</span></a>
+  {% if site.author.googlescholar %}<a href="{{ site.author.googlescholar }}"><i class="ai ai-google-scholar" aria-hidden="true"></i><span>Google Scholar</span></a>{% endif %}
+  {% if site.author.linkedin %}<a href="https://www.linkedin.com/in/{{ site.author.linkedin }}"><i class="fab fa-linkedin" aria-hidden="true"></i><span>LinkedIn</span></a>{% endif %}
+</nav>
+
+<div class="footer__meta">
+  <span>&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}</span>
+  <span aria-hidden="true">&middot;</span>
+  <span>Updated {{ "now" | date: '%B %Y' }}</span>
+  <span aria-hidden="true">&middot;</span>
+  <span>Template: <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, based on <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/">Minimal Mistakes</a></span>
 </div>

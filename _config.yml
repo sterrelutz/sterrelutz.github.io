@@ -22,11 +22,12 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Sterre Lutz"
+  name_audio       : "/assets/audio/name-pronunciation.mp3"
   pronouns         : "she/her"
   bio              : "PhD candidate in Formal Methods for Learned Systems"
   location         : "Delft, The Netherlands"
   employer         : "Delft University of Technology"
-  uri              : "https://sterrelutz.github.io"
+  employer_url     : "https://www.tudelft.nl/"
 
   # Academic websites
   googlescholar    : "https://scholar.google.nl/citations?user=UvVff8MAAAAJ"
