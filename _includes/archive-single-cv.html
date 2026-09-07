@@ -35,6 +35,10 @@
     {% if post.read_time %}
       <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
     {% endif %}
-    {% if post.venue%}<p class="archive__item-excerpt" itemprop="description">{{ post.citation }}</p> {% endif %}
+    {% if post.venue %}
+      {% capture citation_title %}&quot;{{ post.title }}.&quot;{% endcapture %}
+      {% assign compact_citation = post.citation | remove: citation_title | replace: '  ', ' ' %}
+      <p class="archive__item-excerpt" itemprop="description">{{ compact_citation }}</p>
+    {% endif %}
   </article>
 </li>

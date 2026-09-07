@@ -28,11 +28,13 @@ I work in the **[SUMI Lab](https://annalukina.com/team/)** led by **Anna Lukina*
 
 # Education
 
-- **Ph.D. in Formal Methods for Machine Learning**, Delft University of Technology, 2023--Present  
+- **Ph.D. in Formal Methods for Machine Learning**, 2023--Present<br>
+  Delft University of Technology, The Netherlands<br>
   *Advisors: Dr. Anna Lukina and Prof. Matthijs T. J. Spaan*
-- **M.Sc. in Artificial Intelligence (Cum Laude)**, Utrecht University, 2023  
-  *Thesis: r-PLBP: Temporal Logic for Reasoning about Safety and Rewards of Bounded Policies under Uncertainty*
-- **B.Sc. in Computer Science and Engineering (Cum Laude)**, Delft University of Technology, 2020  
+- **M.Sc. in Artificial Intelligence (Cum Laude)**, 2023<br>
+  Utrecht University, The Netherlands<br>
+- **B.Sc. in Computer Science and Engineering (Cum Laude)**, 2020<br>
+  Delft University of Technology, The Netherlands
 {: .star-list }
 
 # Publications & Preprints
@@ -41,35 +43,62 @@ I work in the **[SUMI Lab](https://annalukina.com/team/)** led by **Anna Lukina*
   {% include archive-single-cv.html %}
 {% endfor %}</ul>
 
+<style>
+  .activity-link {
+    display: inline-block;
+    margin-left: 0.4rem;
+    padding: 0.04rem 0.38rem;
+    color: inherit !important;
+    background: transparent !important;
+    border: 1px solid #888 !important;
+    border-radius: 999px;
+    box-shadow: none !important;
+    font-size: 0.68em;
+    font-weight: 500;
+    line-height: 1.4;
+    text-decoration: none !important;
+  }
+</style>
+
 # Academic Activities
 
-- **IJCAI-ECAI 2026 Doctoral Consortium**
-  Bremen, Germany, 2026
+- **IJCAI-ECAI 2026 Doctoral Consortium** [Details](/publication/recovering-formal-guarantees){: .activity-link }<br>
+  Bremen, Germany, 2026<br>
   *Talk: "Recovering Formal Guarantees for Neural Network-Controlled Systems Under Changing Dynamics"*
-- **SAIV 2026 @ FLoC**
-  Lisbon, Portugal, 2026
+- **SAIV 2026 @ FLoC** [Details](/publication/verecycle){: .activity-link }<br>
+  Lisbon, Portugal, 2026<br>
   *Talk: "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change"*
-- **Dagstuhl Seminar: User-Aligned Assessment of AI Systems**
-  Schloss Dagstuhl, Germany, 2026  
+- **Dagstuhl Seminar: User-Aligned Assessment of AI Systems** [Details](https://www.dagstuhl.de/26051){: .activity-link }<br>
+  Schloss Dagstuhl, Germany, 2026<br>
   *Invited talk: "Neural Certificates as Verification with Reusable Reasoning"*
-- **Simons Institute Extended Reunion: Theoretical Foundations of Computer Systems**
-  Berkeley, CA, USA, 2024  
+- **IJCAI 2025 Counterfactual Routing Competition** [Details](/publication/counterfactual-routing){: .activity-link }<br>
+  Montréal, Canada, 2025<br>
+  *4th place; participant with Daniël Vos*
+- **IJCAI 2025** [Details](/publication/verecycle){: .activity-link }<br>
+  Montréal, Canada, 2025<br>
+  *Conference paper presentation: "VeRecycle: Reclaiming Guarantees from Probabilistic Certificates for Stochastic Dynamical Systems after Change"*
+- **Simons Institute Extended Reunion: Theoretical Foundations of Computer Systems** [Details](https://simons.berkeley.edu/people/sterre-lutz){: .activity-link }<br>
+  Berkeley, CA, USA, 2024<br>
   *Research visit; participation in two workshops*
-- **IJCAI 2025**
-  Montréal, Canada, 2025  
-  *Conference paper presentation*
-- **ProLaLa 2023 @ POPL**
-  Boston, USA, 2023  
+- **ProLaLa 2023 @ POPL** [Details](/publication/deontic-paradoxes-flint){: .activity-link }<br>
+  Boston, USA, 2023<br>
   *Workshop paper presentation*
-- **Research Internship**
-  TNO (Netherlands Organisation for Applied Scientific Research), 2022  
+- **Research Internship**<br>
+  TNO (Netherlands Organisation for Applied Scientific Research), 2022<br>
   *Research on formal representations of laws and regulations using deontic and dynamic logic*
 {: .star-list }
 
 # Awards
 
-- **VvL Master’s Thesis Award**, 2024  
+- **VvL Master’s Thesis Award**, 2024 [Details](https://www.verenigingvoorlogica.nl/uploaded_files/inlineitem/VvL_Newsletter_November_2024.pdf){: .activity-link }<br>
   Dutch Association for Logic and Philosophy of Exact Sciences
-- **ASML Technology Scholarship**, 2021--2023  
+- **ASML Technology Scholarship**, 2021--2023<br>
   Nationally competitive merit-based scholarship
+{: .star-list }
+
+# Academic Service
+
+- **Board 64, Study Association W.I.S.V. “Christiaan Huygens”** [Details](https://ch.tudelft.nl/association/boards/board-64/){: .activity-link }<br>
+  Delft, The Netherlands, 2020--2021<br>
+  *Board member responsible for Computer Science Education Affairs*
 {: .star-list }

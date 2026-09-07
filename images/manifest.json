@@ -1,15 +1,25 @@
 {
-	"name": "OOjs UI icon academic-progressive",
-	"icons": [
-		{
-			"src": "/images/favicon-192x192.png",
-			"sizes": "192x192",
-			"type": "image/png"
-		},
-		{
-			"src": "/images/favicon-512x512.png",
-			"sizes": "512x512",
-			"type": "image/png"
-		}
-	]
+  "id": "/",
+  "name": "Sterre Lutz",
+  "short_name": "Sterre Lutz",
+  "description": "Academic website of Sterre Lutz, PhD researcher working on verification of learning-driven control in safety-critical systems.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/images/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/images/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
 }

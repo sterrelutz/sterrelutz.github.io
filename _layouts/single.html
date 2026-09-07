@@ -25,8 +25,14 @@ layout: default
 
     <div class="page__inner-wrap">
       <div class="page__star-field" aria-hidden="true">
-        <span>&#10022;</span><span>&#10022;</span><span>&#10022;</span><span>&#10022;</span>
-        <span>&#10022;</span><span>&#10022;</span><span>&#10022;</span><span>&#10022;</span>
+        {% for i in (1..12) %}
+          <div class="page__star-group">
+            <span>&#10022;</span><span>&#10022;</span><span>&#10022;</span><span>&#10022;</span>
+            <span>&#10022;</span><span>&#10022;</span><span>&#10022;</span><span>&#10022;</span>
+            <span>&#10022;</span><span>&#10022;</span><span>&#10022;</span><span>&#10022;</span>
+            <span>&#10022;</span><span>&#10022;</span>
+          </div>
+        {% endfor %}
       </div>
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
@@ -40,6 +46,8 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
+        {% elsif page.collection == 'publications' and page.publication_status %}
+          <p>{{ page.publication_status }}</p>
         {% elsif page.venue and page.date %}
           <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif page.date %}

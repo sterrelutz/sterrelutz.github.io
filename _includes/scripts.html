@@ -20,6 +20,21 @@
   });
   syncThemeToggleAction();
 
+  var backToTop = document.getElementById('back-to-top');
+  if (backToTop) {
+    var syncBackToTopVisibility = function () {
+      backToTop.hidden = window.scrollY < 64;
+    };
+
+    backToTop.addEventListener('click', function () {
+      var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reducedMotion ? 'auto' : 'smooth' });
+    });
+
+    window.addEventListener('scroll', syncBackToTopVisibility, { passive: true });
+    syncBackToTopVisibility();
+  }
+
   function toggleAuthorLinks(button) {
     var links = document.getElementById('author-links');
     var linksHome = document.querySelector('.author__urls-wrapper');

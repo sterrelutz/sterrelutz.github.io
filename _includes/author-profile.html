@@ -17,24 +17,26 @@
 
   <div class="author__content">
     <h3 class="author__name">
-      {{ author.name }}
-      <button class="name-action name-pronunciation" type="button" aria-label="Hear how to pronounce {{ author.name }}" title="Hear pronunciation" onclick="document.getElementById('name-pronunciation-audio').play()">
-        <i class="fas fa-microphone-lines" aria-hidden="true"></i>
-      </button>
-      <audio id="name-pronunciation-audio" preload="none" src="{{ name_audio | prepend: base_path }}"></audio>
-      <span class="name-note">
-        <button class="name-action name-note__button" type="button" aria-label="Show the meaning of the name Sterre" aria-controls="name-note-panel" aria-expanded="false" title="Show meaning" onclick="showNameMeaning()">
-          <i class="fas fa-question" aria-hidden="true"></i>
+      <span class="author__name-text">{{ author.name }}</span>
+      <span class="name-primary-actions">
+        <button class="name-action name-pronunciation" type="button" aria-label="Hear how to pronounce {{ author.name }}" title="Hear pronunciation" onclick="document.getElementById('name-pronunciation-audio').play()">
+          <i class="fas fa-microphone-lines" aria-hidden="true"></i>
         </button>
-        <span id="name-note-panel" class="name-note__panel" role="status" hidden>
-          <button class="name-note__close" type="button" aria-label="Close name meaning" title="Close" onclick="hideNameMeaning()">&times;</button>
-          <i>Ster</i> means <i>star</i> in Dutch.
+        <span class="name-note">
+          <button class="name-action name-note__button" type="button" aria-label="Show the meaning of the name Sterre" aria-controls="name-note-panel" aria-expanded="false" title="Show meaning" onclick="showNameMeaning()">
+            <i class="fas fa-question" aria-hidden="true"></i>
+          </button>
+          <span id="name-note-panel" class="name-note__panel" role="status" hidden>
+            <button class="name-note__close" type="button" aria-label="Close name meaning" title="Close" onclick="hideNameMeaning()">&times;</button>
+            <i>Ster</i> means <i>star</i> in Dutch.
+          </span>
         </span>
       </span>
       <button class="name-action author-links-toggle" type="button" aria-label="Show contact and profile links" aria-controls="author-links" aria-expanded="false" title="Show contact links" onclick="toggleAuthorLinks(this)">
         <i class="fas fa-envelope" aria-hidden="true"></i>
       </button>
     </h3>
+    <audio id="name-pronunciation-audio" preload="none" src="{{ name_audio | prepend: base_path }}"></audio>
     {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
     {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
   </div>

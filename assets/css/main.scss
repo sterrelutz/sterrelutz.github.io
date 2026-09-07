@@ -93,7 +93,7 @@ body.no-masthead {
   color: #FFAC33;
 }
 
-@media (max-width: 57.81249em) {
+@media (max-width: 68.74999em) {
   .theme-toggle {
     top: auto;
     bottom: 1rem;
@@ -118,7 +118,7 @@ body.no-masthead {
   }
 }
 
-@media (min-width: 57.8125em) {
+@media (min-width: 68.75em) {
   .sidebar {
     top: 0;
     width: 16.0169491525%;
@@ -201,26 +201,39 @@ body.no-masthead {
   pointer-events: none;
 }
 
-@media (min-width: 57.8125em) {
+@media (min-width: 68.75em) {
   .page__star-field {
     display: block;
   }
 }
 
-.page__star-field span {
+.page__star-group {
+  position: relative;
+  width: 100%;
+  height: 100rem;
+  flex: 0 0 100rem;
+}
+
+.page__star-group span {
   position: absolute;
   opacity: 1.0;
   line-height: 1;
 }
 
-.page__star-field span:nth-child(1) { top: 3%;  right: 43%; font-size: 1.1rem; transform: rotate(8deg); }
-.page__star-field span:nth-child(2) { top: 14%; right: 53%; font-size: 2.3rem; transform: rotate(-12deg); }
-.page__star-field span:nth-child(3) { top: 28%; right: 42%; font-size: 1.6rem; transform: rotate(18deg); }
-.page__star-field span:nth-child(4) { top: 43%; right: 50%; font-size: 0.8rem; transform: rotate(-5deg); }
-.page__star-field span:nth-child(5) { top: 57%; right: 41%; font-size: 2.7rem; transform: rotate(12deg); }
-.page__star-field span:nth-child(6) { top: 70%; right: 55%; font-size: 1.3rem; transform: rotate(-16deg); }
-.page__star-field span:nth-child(7) { top: 84%; right: 44%; font-size: 1.9rem; transform: rotate(5deg); }
-.page__star-field span:nth-child(8) { top: 95%; right: 52%; font-size: 0.7rem; transform: rotate(-10deg); }
+.page__star-group span:nth-child(1) { top: 3%;  right: 43%; font-size: 1.1rem; transform: rotate(8deg); }
+.page__star-group span:nth-child(2) { top: 14%; right: 53%; font-size: 2.3rem; transform: rotate(-12deg); }
+.page__star-group span:nth-child(3) { top: 28%; right: 42%; font-size: 1.6rem; transform: rotate(18deg); }
+.page__star-group span:nth-child(4) { top: 43%; right: 50%; font-size: 0.8rem; transform: rotate(-5deg); }
+.page__star-group span:nth-child(5) { top: 57%; right: 41%; font-size: 2.7rem; transform: rotate(12deg); }
+.page__star-group span:nth-child(6) { top: 70%; right: 55%; font-size: 1.3rem; transform: rotate(-16deg); }
+.page__star-group span:nth-child(7) { top: 84%; right: 44%; font-size: 1.9rem; transform: rotate(5deg); }
+.page__star-group span:nth-child(8) { top: 95%; right: 52%; font-size: 0.7rem; transform: rotate(-10deg); }
+.page__star-group span:nth-child(9) { top: 8%; right: 18%; font-size: 0.7rem; transform: rotate(-7deg); }
+.page__star-group span:nth-child(10) { top: 22%; right: 72%; font-size: 1rem; transform: rotate(14deg); }
+.page__star-group span:nth-child(11) { top: 37%; right: 19%; font-size: 1.4rem; transform: rotate(-18deg); }
+.page__star-group span:nth-child(12) { top: 51%; right: 70%; font-size: 0.65rem; transform: rotate(9deg); }
+.page__star-group span:nth-child(13) { top: 67%; right: 20%; font-size: 1.15rem; transform: rotate(-11deg); }
+.page__star-group span:nth-child(14) { top: 89%; right: 72%; font-size: 0.9rem; transform: rotate(17deg); }
 
 .sidebar {
   color: #302819;
@@ -230,7 +243,17 @@ body.no-masthead {
 .sidebar .author__name {
   color: var(--global-text-color);
   font-family: "Philosopher", Georgia, serif;
-  font-size: 1.1em;
+  font-size: 1.35em;
+}
+
+.author__name-text,
+.name-primary-actions {
+  white-space: nowrap;
+}
+
+.name-primary-actions {
+  display: inline-flex;
+  align-items: center;
 }
 
 .name-action.author-links-toggle {
@@ -242,7 +265,13 @@ body.no-masthead {
   z-index: 10;
 }
 
-@media (min-width: 57.8125em) {
+@media (max-width: 68.74999em) {
+  .author__urls:not(.author-links--open) {
+    display: none !important;
+  }
+}
+
+@media (min-width: 68.75em) {
   .name-action.author-links-toggle {
     display: none;
   }
@@ -306,7 +335,7 @@ html[data-theme="dark"] .sidebar .author__avatar img {
 }
 
 ul.star-list > li::marker {
-  color: #111111;
+  color: var(--global-text-color);
 }
 
 html[data-theme="dark"] ul.star-list > li::marker {
@@ -399,7 +428,7 @@ html[data-theme="dark"] .page__footer {
   text-underline-offset: 0.15em;
 }
 
-@media (max-width: 57.81249em) {
+@media (max-width: 68.74999em) {
   .page__footer footer {
     flex-direction: column;
     align-items: flex-start;
@@ -414,9 +443,9 @@ html[data-theme="dark"] .page__footer {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 1.7rem;
-  height: 1.7rem;
-  margin-left: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.12rem;
   padding: 0;
   vertical-align: 0.1em;
   color: #9A6500;

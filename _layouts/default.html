@@ -14,8 +14,57 @@ layout: compress
   <body class="no-masthead">
 
     {% include browser-upgrade.html %}
+    <style>
+      .back-to-top {
+        position: fixed !important;
+        right: 1rem !important;
+        bottom: 1rem !important;
+        top: auto !important;
+        z-index: 20;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 2.5rem;
+        height: 2.5rem;
+        padding: 0;
+        color: var(--global-text-color);
+        background: var(--global-bg-color);
+        border: 1px solid var(--global-border-color);
+        border-radius: 50%;
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+      }
+
+      .back-to-top:hover,
+      .back-to-top:focus-visible {
+        color: var(--global-link-color-hover);
+        border-color: currentColor;
+      }
+
+      .back-to-top:focus-visible {
+        outline: 2px solid currentColor;
+        outline-offset: 2px;
+      }
+
+      .back-to-top i {
+        color: #ffac33;
+      }
+
+      .back-to-top[hidden] {
+        display: none !important;
+      }
+
+      @media (max-width: 68.74999em) {
+        .back-to-top {
+          display: none !important;
+        }
+      }
+    </style>
     <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch to dark mode">
       <i id="theme-icon" class="fa-solid fa-moon" aria-hidden="true"></i>
+    </button>
+    <button id="back-to-top" class="back-to-top" type="button" aria-label="Go to top" title="Go to top" hidden>
+      <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
     </button>
     <span id="shooting-star" class="shooting-star" aria-hidden="true">&#10022;</span>
 

@@ -25,8 +25,8 @@ author:
   name_audio       : "/assets/audio/name-pronunciation.mp3"
   pronouns         : "she/her"
   bio              : "PhD candidate in Formal Methods for Learned Systems"
-  location         : "Delft, The Netherlands"
-  employer         : "Delft University of Technology"
+  # location         : "Delft, The Netherlands"
+  employer         : "TU Delft"
   employer_url     : "https://www.tudelft.nl/"
 
   # Academic websites
